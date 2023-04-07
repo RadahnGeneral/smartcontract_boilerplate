@@ -14,13 +14,11 @@ const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL;
 module.exports = {
   defaultNetwork: "hardhat",
   networks: {
-    hardhat: {
+    localHardhat: {
       chainId: 31337,
-      forking: {
-        url: MAINNET_RPC_URL,
-      },
+      url: "http://127.0.0.1:8545/",
     },
-    localhost: {
+    hardhat: {
       chainId: 31337,
     },
 
